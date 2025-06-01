@@ -19,6 +19,7 @@ function App(): React.JSX.Element {
 <ScrollView contentContainerStyle={styles.scrollViewContent}>
       <Basic />
       <TextInput />
+      <ScrollViewComponent />
   </ScrollView>
     </View>
   );
