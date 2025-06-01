@@ -9,6 +9,7 @@ import {
 // Correct imports based on your structure
 import Basic from './src/components/Basic';
 import TextInput from './src/components/TextInput';
+import ScrollViewComponent from './src/components/ScrollView';
 
 function App(): React.JSX.Element {
   const [count, setCount] = useState<number>(0);
@@ -16,12 +17,12 @@ function App(): React.JSX.Element {
   return (
     <View style={styles.container}>
       <Text>OHAHAY</Text>
-<ScrollView contentContainerStyle={styles.scrollViewContent}>
-      <Basic />
-      <TextInput />
-      <ScrollViewComponent />
-  </ScrollView>
-    </View>
+        <ScrollView nestedScrollEnabled={true} contentContainerStyle={styles.scrollViewContent}>
+          <Basic />
+          <TextInput />
+          <ScrollViewComponent />
+        </ScrollView>
+      </View>
   );
 }
 
