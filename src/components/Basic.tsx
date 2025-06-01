@@ -30,6 +30,21 @@ function Basic() {
             {/**IMAGE COMPONENT WITH LOCAL */}
             <Image style={styles.imageLocal} source={require('../../assets/pogiha.jpg')} />
 
+                        <Image style={styles.image} source={{ uri: 'https://picsum.photos/id/237/200/300' }} />
+
+            {/**IMAGE COMPONENT WITH LOCAL */}
+            <Image style={styles.imageLocal} source={require('../../assets/pogiha.jpg')} />
+
+                        <Image style={styles.image} source={{ uri: 'https://picsum.photos/id/237/200/300' }} />
+
+            {/**IMAGE COMPONENT WITH LOCAL */}
+            <Image style={styles.imageLocal} source={require('../../assets/pogiha.jpg')} />
+
+                        <Image style={styles.image} source={{ uri: 'https://picsum.photos/id/237/200/300' }} />
+
+            {/**IMAGE COMPONENT WITH LOCAL */}
+            <Image style={styles.imageLocal} source={require('../../assets/pogiha.jpg')} />
+
             {/**BUTTON COMPONENT */}
             <Button title="Click Me" onPress={() => setCount(count + 1)} />
             <Text> count is {count} </Text>

@@ -3,6 +3,7 @@ import {
   StyleSheet,
   View,
   Text,
+  ScrollView
 } from 'react-native';
 
 // Correct imports based on your structure
@@ -15,10 +16,10 @@ function App(): React.JSX.Element {
   return (
     <View style={styles.container}>
       <Text>OHAHAY</Text>
-
-      {/* Use your custom components here */}
+<ScrollView contentContainerStyle={styles.scrollViewContent}>
       <Basic />
       <TextInput />
+  </ScrollView>
     </View>
   );
 }
@@ -27,6 +28,9 @@ const styles = StyleSheet.create({
   container: {
     marginBottom: 20,
   },
+  scrollViewContent: {
+    padding: 20,
+  }
 });
 
 export default App;
