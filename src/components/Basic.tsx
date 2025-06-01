@@ -8,11 +8,10 @@ import {
     Button
 } from 'react-native';
 
+
 function Basic() {
 
     const [count, setCount] = useState(0);
-
-
 
     return (
         <View>

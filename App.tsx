@@ -1,24 +1,25 @@
-
 import React, { useState } from 'react';
-
 import {
   StyleSheet,
   View,
   Text,
-  Image,
-  Button
 } from 'react-native';
 
-import TextInputComponent from './src/components/TextInput';
+// Correct imports based on your structure
+import Basic from './src/components/Basic';
+import TextInput from './src/components/TextInput';
 
 function App(): React.JSX.Element {
+  const [count, setCount] = useState<number>(0);
 
-  const [count, setCount] = useState<number>(0)
+  return (
+    <View style={styles.container}>
+      <Text>OHAHAY</Text>
 
-  return (<View style={styles.container}>
-
-    <TextInputComponent />
-  </View>
+      {/* Use your custom components here */}
+      <Basic />
+      <TextInput />
+    </View>
   );
 }
 
