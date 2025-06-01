@@ -17,7 +17,7 @@ const ScrollViewComponent = () => {
       >
         {[...Array(20)].map((_, index) => (
           <View key={index} style={styles.box}>
-            <Text style={styles.boxText}>{index + 1}</Text>
+            <Text style={styles.boxText}>{index + 1} REACT NATIVE</Text>
           </View>
         ))}
       </ScrollView>
