@@ -10,6 +10,7 @@ import {
 import Basic from './src/components/Basic';
 import TextInput from './src/components/TextInput';
 import ScrollViewComponent from './src/components/ScrollView';
+import StylingDemo from './src/components/Styling';
 
 function App(): React.JSX.Element {
   const [count, setCount] = useState<number>(0);
@@ -17,12 +18,13 @@ function App(): React.JSX.Element {
   return (
     <View style={styles.container}>
       <Text>OHAHAY</Text>
-        <ScrollView nestedScrollEnabled={true} contentContainerStyle={styles.scrollViewContent}>
-          <Basic />
-          <TextInput />
-          <ScrollViewComponent />
-        </ScrollView>
-      </View>
+      <ScrollView nestedScrollEnabled={true} contentContainerStyle={styles.scrollViewContent}>
+        <Basic />
+        <TextInput />
+        <ScrollViewComponent />
+        <StylingDemo />
+      </ScrollView>
+    </View>
   );
 }
 
